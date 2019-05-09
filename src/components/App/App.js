@@ -11,7 +11,7 @@ import './App.css';
 
 //import additional components for links
 import Home from '../Home/Home'
-
+import projects from '../Projects/Projects'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -25,6 +25,9 @@ function App() {
           <Redirect exact from="/" to="/home" />
           <Route exact path='/home'
             component={Home} />
+          <Route exact path='/projects'
+            component={projects} />
+
         </Switch>
       </div>
     </Router>

@@ -38,16 +38,25 @@ html {
 }
 
 
-.kitchens > p{
-    margin-left: 1.5em;
+.kitchens > p {
+  padding-block-start: 10px;
+    margin: 0 auto;
 }
 
+.kitchens > ul{
+  width: 50%;
+  margin: 0 auto;
+
+}
 .kitchens > ul > li {
   border: 1px solid #E2E2E2;
   border-radius: .5rem;
+  list-style: none;
 }
 
+
 .kitchens > ul > li > figure {
+  margin: 0 auto;
   max-height: 220px;
   overflow: hidden;
   border-top-left-radius: .5rem;
@@ -75,13 +84,41 @@ html {
 
 .kitchens > ul > li > p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.5px;
   padding: 1rem .75rem;
   color: #666666;
  
 }
 
-.kitchens > ul > li > a {
-  padding: .5rem 1rem;
-  margin: .5rem;
+.kitchens > ul > li > figure > figcaption > h3 > a {
+  padding: 0 20px 20px;
+  margin: 0 auto;
+  float: right;
+  color: white;
 }
+
+
+ @media only screen and (min-width: 768px) {
+  .kitchens > ul > li > figure {
+    max-height: 200px;
+    overflow: auto;
+   
+  }
+
+  .kitchens > ul > li > figure > img {
+  
+    border-radius: 10px;
+}
+
+
+
+.kitchens > ul > li > figure {
+  width: 100%;
+  position: sticky;
+}
+.kitchens > ul{
+  width: 50%;
+  margin: 0 auto;
+
+}
+ }
