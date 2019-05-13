@@ -7,7 +7,7 @@ class MenuContent extends Component {
     constructor(props) {
         super(props)
 
-    this.items = [<a href='#/home'>Home</a> , <a href='#/projects'>Projects</a>, <a href='#/create'>Create New Project</a>]
+    this.items = [<a href='#/home'>Home</a> , <a href='#/projects'> Previous Projects</a>, <a href='#/create'>Create New Project</a>]
        
     }
 
