@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Router } from 'react-router-dom'
 import projects from '../Projects/Projects'
-
-
+import kitchen from '../Home/kitch1.jpeg'
+import './Projects.css'
 
 //Public Home page 
 class Home extends Component {
@@ -21,22 +21,23 @@ class Home extends Component {
         return (
             <main>
                 <section className="home">
-                    <h1>Home</h1>
+                    <h1>Projects</h1>
                     <article>
-                        <p> Welcome to your personal Kitchen Designer</p>
+                        <p>Here you can view previous designs</p>
                     </article>
                 </section>
                 <section className="kitchens" id="kitchens">
                     <p>View our latest kitchen designs</p>
-
-                    <ul>
-                        <p>Designed in this app these kitchens came to life</p>
-                        <li>
                             <figure>
-                                <figcaption><h3>Fake kitchen project <a href='#/projects'>View</a></h3></figcaption>
+                                <img alt="first kitchen example" src={kitchen} />
+                                <figcaption><h3>Fake kitchen project <a >View</a></h3></figcaption>
                             </figure>
-                        </li>
-                    </ul>
+                            <br />
+                    <figure>
+                        <img alt="first kitchen example" src={kitchen} />
+                        <figcaption><h3>Fake kitchen project <a href='#/projects'>View</a></h3></figcaption>
+                    </figure>
+                       
                 </section>
                 <br />
                 <p>To begin a new project click <a href='https://www.google.com'>here</a></p>

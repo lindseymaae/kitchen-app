@@ -40,7 +40,7 @@ class Home extends Component {
                     </ul>
                 </section>
                 <br />
-                <p>To begin a new project click <a href='https://www.google.com'>here</a></p>
+                <p>To begin a new project click <a href='#/create'>here</a></p>
 
             </main>
         )

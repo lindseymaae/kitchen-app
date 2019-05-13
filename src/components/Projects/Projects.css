@@ -1,21 +1,3 @@
-/* Typography imported from Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-}
-
-p, a {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-
-/* Generic styles */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Styles for the home section */
 .home {
   /* grid styles */
@@ -34,16 +16,16 @@ html {
 
 .home > h1 {
   font-size: 2.5rem;
+  text-align: center;
   margin: 0 auto;
 }
 
 .home > article > p {
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 2.5rem;
   padding: 0 20%;
   margin-left: 0;
+  text-align: center;
 }
-
 
 
 .kitchens > p {
@@ -51,33 +33,28 @@ html {
     margin: 0 auto;
 }
 
-.kitchens > ul{
-  width: 100%;
-  padding-inline-start: 0;
-}
-.kitchens > ul > li {
+
+.kitchens {
   border: 1px solid #E2E2E2;
   border-radius: .5rem;
   list-style: none;
 }
 
 
-.kitchens > ul > li > figure {
+.kitchens > figure {
   margin: 0 auto;
   max-height: 220px;
   overflow: hidden;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
   position: relative;
-    width: 100%;
-  
 }
 
-.kitchens > ul > li > figure > img {
+.kitchens >  figure > img {
   width: 100%;
 }
 
-.kitchens > ul > li > figure > figcaption {
+.kitchens >  figure > figcaption {
   position: absolute;
   bottom: 0;
   background-color: rgba(0,0,0,.7);
@@ -85,13 +62,13 @@ html {
   
 }
 
-.kitchens > ul > li > figure > figcaption > h3 {
+.kitchens > figure > figcaption > h3 {
   color: white;
   padding: .75rem;
   font-size: 0.75rem;
 }
 
-.kitchens > ul > li > p {
+.kitchens  > p {
   font-size: 1rem;
   line-height: 1.5px;
   padding: 1rem .75rem;
@@ -99,7 +76,7 @@ html {
  
 }
 
-.kitchens > ul > li > figure > figcaption > h3 > a {
+.kitchens > figure > figcaption > h3 > a {
   padding: 0 20px 20px;
   margin: 0 auto;
   float: right;
@@ -108,26 +85,41 @@ html {
 
 
  @media only screen and (min-width: 768px) {
-  .kitchens > ul > li > figure {
+  .kitchens > figure {
     max-height: 200px;
     overflow: auto;
    
   }
 
-  .kitchens > ul > li > figure > img {
-  
+  .kitchens > figure > img {
     border-radius: 10px;
+    /* width: 100% */
 }
 
 
 
-.kitchens > ul > li > figure {
+.kitchens  > figure {
   width: 100%;
   position: sticky;
 }
-.kitchens > ul{
-  width: 50%;
-  margin: 0 auto;
 
-}
  }
+
+  @media only screen and (min-width: 400px) {
+  .kitchens > figure {
+    max-height: 200px;
+    overflow: auto;
+   
+  }
+
+  .kitchens > figure > img {
+    border-radius: 10px;
+    width: 100%
+}
+
+.kitchens  > figure {
+  width: 100%;
+  position: sticky;
+}
+
+  }
