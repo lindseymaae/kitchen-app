@@ -10,14 +10,28 @@ class NewProject extends Component {
         console.log('project component mounted');
 
     }
+   
+    //auto expand textarea
+   adjust_textarea(h) {
+        h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
+
 
 
     render() {
 
 
         return (
-            <div className="newProject">
-           <h1>Create a New Project</h1>
+            <div class="form-style-8">
+            
+                <h2>Add your room</h2>
+                <form>
+                    <input type="text" name="field1" placeholder="Name" />
+                    <input type="email" name="field2" placeholder="Location (Ex. first floor)" />
+                    <textarea placeholder="Notes" onKeyUp={this.adjust_textarea}></textarea>
+                 
+                </form>
             </div>
         )
     }

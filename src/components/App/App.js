@@ -11,7 +11,7 @@ import './App.css';
 
 //import additional components for links
 import Home from '../Home/Home'
-import projects from '../Projects/Projects'
+import projects from '../Rooms/Rooms'
 import createProject from '../NewProject/NewProject'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
